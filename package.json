@@ -1,0 +1,30 @@
+{
+  "name": "counter-style",
+  "version": "0.1.0",
+  "description": "JavaScript implementation of CSS counter-styles, as specified in https://drafts.csswg.org/css-counter-styles-3/",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint -p tsconfig.json",
+    "test": "jest --config jestconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beanandbean/counter-style.git"
+  },
+  "author": "beanandbean",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "jest": "^25.2.0",
+    "ts-jest": "^25.2.1",
+    "tslint": "^6.1.0",
+    "typescript": "^3.8.3"
+  }
+}
